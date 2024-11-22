@@ -1,0 +1,52 @@
+/* Estilo general para la ventana */
+.macos-window {
+    border: 2px solid #dcdcdc; /* Borde de la ventana */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta el contenido que sobresale */
+    background-color: #f5f5f5; /* Fondo claro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    max-width: 800px; /* Ancho máximo de la ventana */
+    margin: 1rem auto; /* Centrar en la página */
+}
+
+/* Barra superior */
+.macos-header {
+    background-color: #e0e0e0; /* Color de la barra superior */
+    height: 24px; /* Altura de la barra */
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    border-bottom: 1px solid #ccc; /* Línea divisoria */
+}
+
+/* Botones estilo macOS */
+.macos-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px; /* Espaciado entre botones */
+}
+
+/* Colores de los botones */
+.macos-red {
+    background-color: #ff605c;
+}
+.macos-yellow {
+    background-color: #ffbd44;
+}
+.macos-green {
+    background-color: #00ca4e;
+}
+
+/* Bloque de código */
+.hljs {
+    padding: 1rem;
+    background-color: #2d2d2d; /* Fondo oscuro estilo Monokai */
+    color: #f8f8f2; /* Color de texto */
+    font-family: 'Courier New', monospace;
+    border: none; /* Sin bordes adicionales */
+}
+
+pre {
+    margin: 0;
+}

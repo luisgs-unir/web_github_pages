@@ -1,0 +1,104 @@
+/* Tema claro */
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --highlight-color: #ff8800; /* Naranja */
+}
+
+/* Tema oscuro */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #1e1e1e;
+        --text-color: #f0f0f0;
+        --highlight-color: #ffbb77;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Encabezado */
+header {
+    background-color: var(--highlight-color);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+section {
+    border: 1px solid var(--highlight-color);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--highlight-color);
+    color: #fff;
+}
+
+/* Highlight.js customization */
+.hljs {
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-title {
+    color: var(--highlight-color);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        padding: 0 0.5rem;
+    }
+}

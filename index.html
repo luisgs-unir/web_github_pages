@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía paso a paso para publicar un sitio web en GitHub Pages.">
+    <meta name="author" content="tionazo">
+    <title>Cómo Publicar un Sitio Web en GitHub Pages</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles_highlight.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Cómo Publicar un Sitio Web en GitHub Pages</h1>
+            <nav>
+                <ul>
+                    <li><a href="#crear-repositorio">Crear un Repositorio</a></li>
+                    <li><a href="#subir-archivos">Subir Archivos</a></li>
+                    <li><a href="#configurar-github-pages">Configurar GitHub Pages</a></li>
+                    <li><a href="#visitar-sitio">Visitar tu Sitio</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="crear-repositorio">
+                <h2>Crear un Repositorio en GitHub</h2>
+                <ol>
+                    <li>Visita <a href="https://github.com" target="_blank">GitHub.com</a> y crea una cuenta si no
+                        tienes una.</li>
+                    <li>Haz clic en el botón "Nuevo repositorio" en la esquina superior derecha.</li>
+                    <li>Asigna un nombre a tu repositorio. Si es un sitio de usuario, debe ser
+                        <code>&lt;usuario&gt;.github.io</code>.</li>
+                    <li>Selecciona la visibilidad del repositorio (público o privado).</li>
+                    <li>Inicializa el repositorio con un README si lo deseas.</li>
+                    <li>Haz clic en "Crear repositorio".</li>
+                </ol>
+            </section>
+
+            <section id="subir-archivos">
+                <h2>Subir Archivos a tu Repositorio</h2>
+                <div class="macos-window">
+                    <div class="macos-header">
+                        <span class="macos-button macos-red"></span>
+                        <span class="macos-button macos-yellow"></span>
+                        <span class="macos-button macos-green"></span>
+                    </div>
+                    <pre><code class="language-bash">
+git clone https://github.com/usuario/nombre-repositorio.git
+cd nombre-repositorio
+echo '&lt;html&gt;&lt;body&gt;Hola Mundo&lt;/body&gt;&lt;/html&gt;' > index.html
+git add .
+git commit -m "Agregar archivo index.html"
+git push origin main
+                </code></pre>
+                </div>
+            </section>
+
+            <section id="configurar-github-pages">
+                <h2>Configurar GitHub Pages</h2>
+                <ol>
+                    <li>Ve a la página de tu repositorio en GitHub.</li>
+                    <li>Haz clic en la pestaña "Configuración" (Settings).</li>
+                    <li>Desplázate hacia abajo hasta la sección "GitHub Pages".</li>
+                    <li>En "Source", selecciona la rama que deseas usar (por ejemplo, <code>main</code> o
+                        <code>gh-pages</code>) y haz clic en "Guardar".</li>
+                </ol>
+            </section>
+
+            <section id="visitar-sitio">
+                <h2>Visitar tu Sitio Web</h2>
+                <p>Una vez que GitHub Pages esté configurado, tu sitio estará disponible en la URL:</p>
+                <div class="macos-window">
+                    <div class="macos-header">
+                        <span class="macos-button macos-red"></span>
+                        <span class="macos-button macos-yellow"></span>
+                        <span class="macos-button macos-green"></span>
+                    </div>
+                    <pre><code class="language-html">
+https://&lt;usuario&gt;.github.io/&lt;nombre-repositorio&gt;/
+                    </code></pre>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 tionazo. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
